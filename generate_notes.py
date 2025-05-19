@@ -32,7 +32,7 @@ def generate_notes(
         with open(output_file, "w") as output_f:
             json.dump(result, output_f)
     else:
-        click.echo(result)
+        click.echo(json.dumps(result, indent=2))
 
 
 if __name__ == "__main__":
