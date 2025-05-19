@@ -1,10 +1,14 @@
 import json
 
 import click
+import dotenv
 
 from discharge_notes.constants import GENERATOR_INSTRUCTIONS
 from discharge_notes.discharger import DischargeNoteBuilder
 from discharge_notes.generators.openai import OpenAIGenerator
+
+dotenv.load_dotenv()
+
 
 GENERATORS = {
     "openai": OpenAIGenerator(context=GENERATOR_INSTRUCTIONS),
