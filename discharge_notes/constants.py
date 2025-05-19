@@ -45,5 +45,6 @@ You will be given a consulation object which contatins the following fields:
 
 From this data you will need to generate a discharge note for the patient. The discharge note should
 be a set of simple instructions summarizing what happened during the consultations and what are the
-next steps the patient should take.
+next steps the patient should take. This should be in plaintext with no formatting and standard ascii
+characters only.
 """
